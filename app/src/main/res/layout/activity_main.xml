@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#ffffcc"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pdg.e_bloodbank.MainActivity">
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/bloodbank"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et" android:textStyle="bold"
+        android:text="E-Blood Bank"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/rl"
+        android:layout_marginTop="25dp"
+        android:padding="6dp"
+        android:layout_below="@+id/et">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Username"
+            android:textColor="#000"
+
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:layout_below="@+id/username"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#000"
+
+            android:layout_marginTop="20dp"
+            />
+
+
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="100dp"
+            android:text="LOGIN" android:layout_below="@+id/password" android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true" style="@style/CustomButtonStyle"
+            android:id="@+id/btn_login" android:textSize="17dp" android:padding="14dp"
+             android:textColor="#fff" android:textStyle="bold"
+            android:paddingTop="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/btn_login"
+            android:layout_centerHorizontal="true" android:id="@+id/forgot"
+            android:text="Forgot password? Click here"  android:clickable="true"               android:onClick="Forgot"
+            android:textColor="#ff512c" android:textSize="18dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:textColor="#ffffff" style="@style/CustomButtonStyle"
+        android:text="SIGN UP" android:id="@+id/btn_signup"
+        android:textSize="17dp" android:textStyle="bold"
+        android:background="@drawable/button" android:gravity="center"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"             android:onClick="signup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--<com.gc.materialdesign.views.ButtonFlat-->
+
+        <!--android:layout_width="match_parent" android:textSize="20dp" android:text="SIGN UP" android:id="@+id/btn_signup"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#e11894" android:textStyle="bold"-->
+
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--/>-->
+
+</RelativeLayout>

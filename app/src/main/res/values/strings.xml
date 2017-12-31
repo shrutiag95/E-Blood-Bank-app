@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">E_BloodBank</string>
+    <string name = "forgot_detail">Please enter the OTP sent to your registered phone number:</string>
+
+    <string-array name="spinner">
+        <item></item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="15dp"
+    android:orientation="vertical" android:layout_width="match_parent" android:background="#ffffcc"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="My Credits:" android:id="@+id/credits"
+        android:layout_height="wrap_content" android:textSize="17dp"
+        android:layout_alignParentTop="true" android:textColor="#e24040"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content" android:text="Welcome User" android:textColor="#e24040" android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_height="wrap_content" android:id="@+id/welcomemsg"
+
+        android:layout_marginTop="107dp"
+        android:layout_below="@+id/credits"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_below="@+id/welcomemsg" android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" android:background="@drawable/button"
+            android:text="Proceed as Donor"         android:onClick="donor"
+            android:textSize="17dp" android:textColor="#fff" android:layout_gravity="center_horizontal"
+            android:id="@+id/donate"
+            android:textStyle="bold"
+            android:layout_marginTop="87dp"
+ />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" android:background="@drawable/button"
+            android:text="Recieve blood" android:layout_gravity="center_horizontal"
+            android:textSize="17dp" android:textColor="#fff"
+            android:id="@+id/recieve" android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+
+
+            android:layout_marginTop="39dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
