@@ -1,0 +1,1 @@
+This project is conducted under the smart city campaign by local government of Gwalior, MP. The main objective of this application is to provide an easy way to search for the appropriate hospital for donation and reception of blood in case of emergency.
